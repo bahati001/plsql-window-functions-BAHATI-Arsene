@@ -51,7 +51,7 @@ Queries for all categories are included in [`sql/step4_queries.sql`](assignment1
 - **Navigation** (`LAG`, `LEAD`) → Month-over-month growth.  
 - **Distribution** (`NTILE`, `CUME_DIST`) → Customer segmentation.  
 
-Screenshots of outputs are stored in the [`screenshots/`](screenshot/) folder.  
+Screenshots of outputs are stored in the [`screenshots/`](screenshoot/) folder.  
 
 ---
 
@@ -93,7 +93,4 @@ The company should focus on rewarding high-spending customers and design promoti
 9. IBM. *SQL Reference: OLAP and Window Functions*. [https://www.ibm.com/docs](https://www.ibm.com/docs)  
 10. ResearchGate. *Using SQL Window Functions for Business Analytics*. [https://www.researchgate.net](https://www.researchgate.net)  
 
----
-
-✍️ Author: *[Your Name]*  
-📅 Date: September 2025  
+ 
