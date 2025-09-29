@@ -48,7 +48,7 @@ Three related tables with foreign keys:
    *Use case:* Customer segmentation by spending level  
 
 📄 SQL scripts available in [`sql/step4_queries.sql`](sql/step4_queries.sql).  
-📷 Screenshots of results are in the [`screenshots/`](screenshots/) folder.
+📷 Screenshots of results are in the [`screenshots/`](screenshoot/) folder.
 
 ---
 
