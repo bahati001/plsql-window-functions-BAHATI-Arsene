@@ -1,86 +1,81 @@
-# PL/SQL Window Functions Assignment
+PL/SQL Window Functions Assignment
 
 This repository contains my assignment on using SQL window functions to analyze sales and customer data.  
 The project follows the given steps: defining a problem, success criteria, schema design, implementation of queries, analysis of results, GitHub organization, and references.
 
----
 
-## Step 1: Problem Definition 
+Step 1: Problem Definition 
 
-**Business Context**  
+Business Context  
 A retail company sells different products such as beverages, groceries, and household items. The sales department wants to measure performance by region and identify which customers and products contribute most to revenue.  
 
-**Data Challenge**  
+Data Challenge  
 Managers cannot easily tell which products sell best in each region, which customers are high value, and how sales change from one month to another. Customer segmentation is also missing.  
 
-**Expected Outcome**  
+Expected Outcome  
 The company expects to use SQL window functions to:  
 - Rank top products and customers,  
 - Track sales trends over time, and  
 - Segment customers into spending categories.  
 
----
 
-## Step 2: Success Criteria 
+Step 2: Success Criteria 
 
 The analysis is considered successful if it produces the following measurable results:
 
-1. **Top 5 products per region and quarter** → using `RANK()`.  
-2. **Running monthly sales totals** → using `SUM() OVER()`.  
-3. **Month-over-month growth** → using `LAG()` and `LEAD()`.  
-4. **Customer quartiles** → using `NTILE(4)`.  
-5. **3-month moving averages** → using `AVG() OVER()`.  
+1. Top 5 products per region and quarter** → using `RANK()`.  
+2. Running monthly sales totals** → using `SUM() OVER()`.  
+3. Month-over-month growth** → using `LAG()` and `LEAD()`.  
+4. Customer quartiles** → using `NTILE(4)`.  
+5. 3-month moving averages** → using `AVG() OVER()`.  
 
----
 
-## Step 3: Database Schema 
+Step 3: Database Schema 
 
 Three related tables were designed:
 
-- **customers** → `(customer_id, name, region)`  
-- **products** → `(product_id, name, category)`  
-- **transactions** → `(transaction_id, customer_id, product_id, sale_date, amount)`  
+- customers → `(customer_id, name, region)`  
+- products → `(product_id, name, category)`  
+- transactions → `(transaction_id, customer_id, product_id, sale_date, amount)`  
 
 
-## Step 4: Window Functions Implementation 
+Step 4: Window Functions Implementation 
 
 Queries for all categories are included in [`sql/step4_queries.sql`](assignment1/).  
 
-- **Ranking** (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `PERCENT_RANK`) → Top customers by revenue.  
-- **Aggregate** (`SUM`, `AVG`, `MIN`, `MAX` with ROWS vs RANGE) → Running totals and moving averages.  
-- **Navigation** (`LAG`, `LEAD`) → Month-over-month growth.  
-- **Distribution** (`NTILE`, `CUME_DIST`) → Customer segmentation.  
+- Ranking (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `PERCENT_RANK`) → Top customers by revenue.  
+- Aggregate (`SUM`, `AVG`, `MIN`, `MAX` with ROWS vs RANGE) → Running totals and moving averages.  
+- Navigation (`LAG`, `LEAD`) → Month-over-month growth.  
+- Distribution** (`NTILE`, `CUME_DIST`) → Customer segmentation.  
 
 Screenshots of outputs are stored in the [`screenshots/`](screenshoot/) folder.  
 
----
 
-## Step 5: GitHub Repository 
+ Step 5: GitHub Repository 
 
-- **Repo Name:** `plsql-window-functions-[lastname]-[firstname]`  
-- **Visibility:** Public  
-- **Contents:**  
+- Repo Name: `plsql-window-functions-[lastname]-[firstname]`  
+- Visibility: Public  
+- Contents:  
   - `sql/` → schema, data, and queries  
   - `docs/` → assignment write-up  
   - `screenshots/` → result images  
   - `README.md` → project overview  
 
----
 
-## Step 6: Results Analysis 
+Step 6: Results Analysis 
 
-**Descriptive – What happened?**  
+Descriptive – What happened?
 Certain products, especially beverages, ranked top in sales. Monthly totals revealed steady growth in some quarters, with a few noticeable dips. Customer quartiles showed that a small group of customers generated most of the revenue.  
 
-**Diagnostic – Why?**  
+Diagnostic – Why?
 Seasonal demand, stock levels, and regional preferences likely explain product performance. Sales dips may be tied to supply shortages or off-season months. Customer imbalance shows dependence on a few loyal buyers.  
 
-**Prescriptive – What next?**  
+Prescriptive – What next?
 The company should focus on rewarding high-spending customers and design promotions to encourage growth in lower quartiles. Stock management should prepare for seasonal peaks, and top products should receive priority in marketing.  
 
----
 
-## Step 7: References 
+
+Step 7: References 
 
 1. Oracle. *Analytic Functions Documentation*. [https://docs.oracle.com](https://docs.oracle.com)  
 2. PostgreSQL. *Window Functions Tutorial*. [https://www.postgresql.org/docs/current/tutorial-window.html](https://www.postgresql.org/docs/current/tutorial-window.html)  
