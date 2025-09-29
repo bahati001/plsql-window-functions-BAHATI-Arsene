@@ -30,7 +30,7 @@ Three related tables with foreign keys:
 - **products** → `(product_id, name, category)`
 - **transactions** → `(transaction_id, customer_id, product_id, sale_date, amount)`
 
-📊 ER diagram and SQL `CREATE TABLE` scripts are included in [`sql/step3_schema.sql`](sql/step3_schema.sql).
+📊 ER diagram and SQL `CREATE TABLE` scripts are included in [`sql/step3_schema.sql`](assignment1/).
 
 ---
 
@@ -47,7 +47,7 @@ Three related tables with foreign keys:
 4. **Distribution** → `NTILE(4)`, `CUME_DIST()`  
    *Use case:* Customer segmentation by spending level  
 
-📄 SQL scripts available in [`sql/step4_queries.sql`](sql/step4_queries.sql).  
+📄 SQL scripts available in the word document located [`sql/step4_queries.sql`](assignemnt1/). 
 📷 Screenshots of results are in the [`screenshots/`](screenshoot/) folder.
 
 ---
