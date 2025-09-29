@@ -30,7 +30,7 @@ Three related tables with foreign keys:
 - **products** → `(product_id, name, category)`
 - **transactions** → `(transaction_id, customer_id, product_id, sale_date, amount)`
 
-📊 ER diagram and SQL `CREATE TABLE` scripts are included in [`sql/step3_schema.sql`](assignment1/).
+📊 ER diagram and SQL `CREATE TABLE` scripts are included in [`assignment1/`]
 
 ---
 
