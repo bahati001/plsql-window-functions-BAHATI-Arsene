@@ -5,7 +5,7 @@ The project follows the given steps: defining a problem, success criteria, schem
 
 ---
 
-## Step 1: Problem Definition (2 pts)
+## Step 1: Problem Definition 
 
 **Business Context**  
 A retail company sells different products such as beverages, groceries, and household items. The sales department wants to measure performance by region and identify which customers and products contribute most to revenue.  
@@ -21,7 +21,7 @@ The company expects to use SQL window functions to:
 
 ---
 
-## Step 2: Success Criteria (2 pts)
+## Step 2: Success Criteria 
 
 The analysis is considered successful if it produces the following measurable results:
 
@@ -33,7 +33,7 @@ The analysis is considered successful if it produces the following measurable re
 
 ---
 
-## Step 3: Database Schema (2 pts)
+## Step 3: Database Schema 
 
 Three related tables were designed:
 
@@ -42,7 +42,7 @@ Three related tables were designed:
 - **transactions** → `(transaction_id, customer_id, product_id, sale_date, amount)`  
 
 
-## Step 4: Window Functions Implementation (4 pts)
+## Step 4: Window Functions Implementation 
 
 Queries for all categories are included in [`sql/step4_queries.sql`](assignment1/).  
 
@@ -55,7 +55,7 @@ Screenshots of outputs are stored in the [`screenshots/`](screenshoot/) folder.
 
 ---
 
-## Step 5: GitHub Repository (1.5 pts)
+## Step 5: GitHub Repository 
 
 - **Repo Name:** `plsql-window-functions-[lastname]-[firstname]`  
 - **Visibility:** Public  
@@ -67,7 +67,7 @@ Screenshots of outputs are stored in the [`screenshots/`](screenshoot/) folder.
 
 ---
 
-## Step 6: Results Analysis (2 pts)
+## Step 6: Results Analysis 
 
 **Descriptive – What happened?**  
 Certain products, especially beverages, ranked top in sales. Monthly totals revealed steady growth in some quarters, with a few noticeable dips. Customer quartiles showed that a small group of customers generated most of the revenue.  
@@ -80,7 +80,7 @@ The company should focus on rewarding high-spending customers and design promoti
 
 ---
 
-## Step 7: References (0.5 pts)
+## Step 7: References 
 
 1. Oracle. *Analytic Functions Documentation*. [https://docs.oracle.com](https://docs.oracle.com)  
 2. PostgreSQL. *Window Functions Tutorial*. [https://www.postgresql.org/docs/current/tutorial-window.html](https://www.postgresql.org/docs/current/tutorial-window.html)  
